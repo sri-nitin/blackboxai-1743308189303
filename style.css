@@ -1,0 +1,35 @@
+/* Core click animation */
+.core {
+    transition: transform 0.1s ease;
+}
+
+.core:active {
+    transform: scale(0.9);
+}
+
+/* Upgrade button hover effect */
+.upgrade-btn:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Bounce animation for the title */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .core {
+        width: 200px;
+        height: 200px;
+    }
+}
